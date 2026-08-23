@@ -83,7 +83,7 @@ Two common ways:
 2. **`.format()` method** — replaces `{}` placeholders with arguments passed to `.format()`.
 
 ```python
-name = "Raj"
+name = "Chandan"
 age = 20
 print(f"Name: {name}, Age: {age}")
 
@@ -520,7 +520,7 @@ cook_maggi()    # can call it as many times as needed
 def greet(name):
     print(name)
 
-result = greet("Raj")
+result = greet("Chandan")
 print(result)    # None, because greet() has no return statement
 ```
 - To get a usable value back from a function, use `return`.
@@ -553,8 +553,8 @@ def myFunc(x, y=20, z=10):   # correct order
 def student(firstname, lastname):
     print(firstname, lastname)
 
-student(firstname='Raj', lastname='Kumar')
-student(lastname='swaraj', firstname='setty')   # order doesn't matter
+student(firstname='Chandan', lastname='Kumar')
+student(lastname='swaChandan', firstname='setty')   # order doesn't matter
 ```
 
 **c) Positional Arguments**
@@ -1027,14 +1027,14 @@ squares = {x: x*x for x in range(6)}
 ```python
 company = {
     "Sales": {
-        "Raj": {"ID": 101, "Title": "Sales Manager"},
+        "Chandan": {"ID": 101, "Title": "Sales Manager"},
         "Akash": {"ID": 102, "Title": "Sales Representative"}
     },
     "IT": {
         "Ranveer": {"ID": 201, "Title": "IT Manager"}
     }
 }
-print(company["Sales"]["Raj"])   # {'ID': 101, 'Title': 'Sales Manager'}
+print(company["Sales"]["Chandan"])   # {'ID': 101, 'Title': 'Sales Manager'}
 ```
 
 ### 6.15 Practical Dictionary Patterns
