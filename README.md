@@ -26,7 +26,7 @@
 - **Error reporting**: A compiler reports all errors only after full compilation (code won't run if there are mistakes). An interpreter reports errors line by line, stopping as soon as it hits one.
 - Python is an **interpreted** language.
 
-> **Example/Explanation by Claude:** Think of a compiler like a translator who reads an entire book first, translates it completely, and only then hands you the finished translated book — if there's a typo anywhere, you get nothing until it's fixed. An interpreter is more like someone translating a speech live, sentence by sentence, as the speaker talks — you get partial output immediately, but if a sentence has an error, everything stops right there.
+> **AI Example/Explanation:** Think of a compiler like a translator who reads an entire book first, translates it completely, and only then hands you the finished translated book — if there's a typo anywhere, you get nothing until it's fixed. An interpreter is more like someone translating a speech live, sentence by sentence, as the speaker talks — you get partial output immediately, but if a sentence has an error, everything stops right there.
 
 ### 1.2 Variables
 - A **variable** is a name given to a memory location that stores a value.
@@ -75,7 +75,7 @@ first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 ```
 
-> **Example/Explanation by Claude:** `input()` is like a form field that only accepts plain text — even if someone types "25", Python sees it as the *text* `"25"`, not the *number* `25`. That's why you need `int(input(...))` to convert it: read the text, then convert.
+> **AI Example/Explanation:** `input()` is like a form field that only accepts plain text — even if someone types "25", Python sees it as the *text* `"25"`, not the *number* `25`. That's why you need `int(input(...))` to convert it: read the text, then convert.
 
 ### 1.7 Formatting Output
 Two common ways:
@@ -137,7 +137,7 @@ print("Congratulations, " + user + "! You just wrote " + str(lines) + " lines of
 - `0` and `""` (empty string) convert to `False`.
 - Every other value (including negative numbers, non-zero complex numbers) converts to `True`.
 
-> **Example/Explanation by Claude:** Python treats "emptiness" or "zero-ness" as False, and everything else as True. So `bool(-4)` is `True` (it's a non-zero number), and `bool("")` is `False` (empty string), but `bool(" ")` (a string with just a space) is `True`, because it isn't *empty* — it has one character in it.
+> **AI Example/Explanation:** Python treats "emptiness" or "zero-ness" as False, and everything else as True. So `bool(-4)` is `True` (it's a non-zero number), and `bool("")` is `False` (empty string), but `bool(" ")` (a string with just a space) is `True`, because it isn't *empty* — it has one character in it.
 
 ### 1.10 Operators
 
@@ -158,7 +158,7 @@ print("Congratulations, " + user + "! You just wrote " + str(lines) + " lines of
 x = -5; y = 4
 result = y - (x % y)   # = 1
 ```
-> **Example/Explanation by Claude:** Python's modulus always returns a result with the *same sign as the divisor*. So `-5 % 4` in Python is `3`, not `-1` (unlike some other languages). This trips up a lot of beginners moving from C/Java.
+> **AI Example/Explanation:** Python's modulus always returns a result with the *same sign as the divisor*. So `-5 % 4` in Python is `3`, not `-1` (unlike some other languages). This trips up a lot of beginners moving from C/Java.
 
 **Comparison Operators:** `==`, `!=`, `>`, `<`, `>=`, `<=` — each returns a Boolean.
 
@@ -176,7 +176,7 @@ result = y - (x % y)   # = 1
 5 or 0 or "" or 2       # → 5  (first true value)
 0 or False or ""        # → ''  (all false, so last value)
 ```
-> **Example/Explanation by Claude:** Python's `and`/`or` don't just return `True`/`False` — they return one of the *actual values* being compared. Think of `and` as a chain that stops at the first "weak link" (falsy value); `or` stops at the first "strong link" (truthy value). If nothing stops the chain, you get whatever value was last in line.
+> **AI Example/Explanation:** Python's `and`/`or` don't just return `True`/`False` — they return one of the *actual values* being compared. Think of `and` as a chain that stops at the first "weak link" (falsy value); `or` stops at the first "strong link" (truthy value). If nothing stops the chain, you get whatever value was last in line.
 
 **Identity Operators:** `is`, `is not` — check whether two variables point to the *same object* in memory (not just equal values).
 
@@ -283,7 +283,7 @@ if year_to_check % 4 == 0:
 else:
     print(year_to_check, "is not a leap year.")
 ```
-> **Example/Explanation by Claude:** A leap year is divisible by 4, **except** century years (divisible by 100) — unless those are also divisible by 400. So 2000 is a leap year (divisible by 400), but 1900 is not (divisible by 100, not by 400). The nested logic mirrors this exact rule step by step.
+> **AI Example/Explanation:** A leap year is divisible by 4, **except** century years (divisible by 100) — unless those are also divisible by 400. So 2000 is a leap year (divisible by 400), but 1900 is not (divisible by 100, not by 400). The nested logic mirrors this exact rule step by step.
 
 ### 2.5 Quick Reference — Conceptual Q&A
 - `if` executes code when a condition is true.
@@ -417,7 +417,7 @@ for i in range(n):
         print("*", end="")
     print()
 ```
-> **Example/Explanation by Claude:** In the pyramid, each row `i` needs `(n-i-1)` leading spaces (fewer as you go down) and `(2*i+1)` stars (an odd, growing count). This is a classic pattern-printing trick: the total width stays constant, but the balance between spaces and stars shifts row by row.
+> **AI Example/Explanation:** In the pyramid, each row `i` needs `(n-i-1)` leading spaces (fewer as you go down) and `(2*i+1)` stars (an odd, growing count). This is a classic pattern-printing trick: the total width stays constant, but the balance between spaces and stars shifts row by row.
 
 ### 3.9 `break` Statement
 - Immediately exits the nearest enclosing loop, skipping any remaining iterations.
@@ -454,7 +454,7 @@ for attempt in range(1, max_attempts + 1):
 else:
     print("You've exceeded the maximum number of attempts. Access denied.")
 ```
-> **Example/Explanation by Claude:** `for...else` confuses many people because "else" normally implies "otherwise." Here it actually means "run this if the loop was *not* interrupted by `break`." So it's really an "if-no-break" clause — a way to detect that the loop ran to completion.
+> **AI Example/Explanation:** `for...else` confuses many people because "else" normally implies "otherwise." Here it actually means "run this if the loop was *not* interrupted by `break`." So it's really an "if-no-break" clause — a way to detect that the loop ran to completion.
 
 **`while True` with `break` (infinite loop pattern):**
 ```python
@@ -490,7 +490,7 @@ while True:
 print(f"The total sum of non-negative numbers is: {total_sum}")
 ```
 
-> **Example/Explanation by Claude:** Think of `break` as "leave the building entirely" and `continue` as "skip to the next item on your to-do list without finishing this one." `break` stops the whole loop; `continue` just jumps back to the top of the loop for the next iteration.
+> **AI Example/Explanation:** Think of `break` as "leave the building entirely" and `continue` as "skip to the next item on your to-do list without finishing this one." `break` stops the whole loop; `continue` just jumps back to the top of the loop for the next iteration.
 
 ---
 
@@ -500,7 +500,7 @@ print(f"The total sum of non-negative numbers is: {total_sum}")
 - **Definition:** A function is a named block of code that performs a specific task — it can take input, process/manipulate it, and return an output.
 - **Why use functions?** Without them, repeating a task (e.g., cooking multiple orders of the same recipe) means duplicating code every time. A function lets you define the logic *once* and reuse it via a simple function call.
 
-> **Example/Explanation by Claude:** Imagine teaching a robot a recipe. Without a function, you'd have to re-type every single step each time an order comes in — 3 bowls of maggi means writing the recipe 3 times. With a function (`def cook_maggi(): ...`), you teach the robot once, and then just say "make maggi" three times. This is the core value of functions: **write once, use many times.**
+> **AI Example/Explanation:** Imagine teaching a robot a recipe. Without a function, you'd have to re-type every single step each time an order comes in — 3 bowls of maggi means writing the recipe 3 times. With a function (`def cook_maggi(): ...`), you teach the robot once, and then just say "make maggi" three times. This is the core value of functions: **write once, use many times.**
 
 ### 4.2 Defining and Calling a Function
 ```python
@@ -596,7 +596,7 @@ def func_keyword_args(**keywords):
 func_keyword_args(first='All', mid='The', last='Best')
 ```
 
-> **Example/Explanation by Claude:** Think of `*args` as a bag that collects any *unnamed* extra items someone hands you (accessed like a list/tuple), and `**kwargs` as a bag that collects any *labeled* extra items (accessed like a dictionary of key-value pairs). Both let a function accept a flexible, unknown number of inputs.
+> **AI Example/Explanation:** Think of `*args` as a bag that collects any *unnamed* extra items someone hands you (accessed like a list/tuple), and `**kwargs` as a bag that collects any *labeled* extra items (accessed like a dictionary of key-value pairs). Both let a function accept a flexible, unknown number of inputs.
 
 ### 4.5 Nested Function Logic — Full Example
 ```python
@@ -636,7 +636,7 @@ starts_with_letter = lambda word, letter: word.startswith(letter)
 print(starts_with_letter("python", "p"))   # True
 ```
 
-> **Example/Explanation by Claude:** A lambda is like a function you use once and throw away — instead of writing `def double(x): return x*2` and calling `double(5)`, you can write `lambda x: x*2` inline, right where you need it. It's especially handy as a quick argument to functions like `map()`, `filter()`, and `reduce()`, which expect a function to apply.
+> **AI Example/Explanation:** A lambda is like a function you use once and throw away — instead of writing `def double(x): return x*2` and calling `double(5)`, you can write `lambda x: x*2` inline, right where you need it. It's especially handy as a quick argument to functions like `map()`, `filter()`, and `reduce()`, which expect a function to apply.
 
 ### 4.8 `map()` Function
 - Applies a given function to **every item** of an iterable and returns a map object (convert to `list()` to view).
@@ -665,7 +665,7 @@ max_number = functools.reduce(lambda a, b: a if a > b else b, numbers)
 print(max_number)       # 102
 ```
 
-> **Example/Explanation by Claude:** `reduce()` works like folding a strip of paper in half repeatedly until you're left with one small square. It takes the first two elements, combines them per your function, then combines that result with the next element, and so on — until only one final combined value remains.
+> **AI Example/Explanation:** `reduce()` works like folding a strip of paper in half repeatedly until you're left with one small square. It takes the first two elements, combines them per your function, then combines that result with the next element, and so on — until only one final combined value remains.
 
 ### 4.10 `filter()` Function
 - Creates an iterator containing only the elements of an iterable that satisfy a given condition (function returns `True`).
@@ -743,7 +743,7 @@ text[:4]    # from the beginning up to (not including) index 4
 text[7:]    # from index 7 to the end
 ```
 
-> **Example/Explanation by Claude:** Think of slicing syntax `[start:end:step]` as "start here, stop *before* here, and skip this many each time." Omitting `start` means "begin at 0"; omitting `end` means "go to the very end"; a `step` of `-1` walks backward, one character at a time, which is why `text[::-1]` reverses a string.
+> **AI Example/Explanation:** Think of slicing syntax `[start:end:step]` as "start here, stop *before* here, and skip this many each time." Omitting `start` means "begin at 0"; omitting `end` means "go to the very end"; a `step` of `-1` walks backward, one character at a time, which is why `text[::-1]` reverses a string.
 
 ### 5.5 String Immutability
 - Strings **cannot** be modified in place — attempting `name[0] = "U"` raises a `TypeError`.
@@ -753,7 +753,7 @@ name = "Adam Jones"
 name = "Jack"    # this creates a new string and reassigns the variable
 ```
 
-> **Example/Explanation by Claude:** A string in Python is like a printed page — you can't erase and rewrite a single letter on it, but you *can* throw the page away and print a brand-new one. "Reassigning" a variable to a new string is exactly that: the old string object is discarded and the variable now points to a completely different one.
+> **AI Example/Explanation:** A string in Python is like a printed page — you can't erase and rewrite a single letter on it, but you *can* throw the page away and print a brand-new one. "Reassigning" a variable to a new string is exactly that: the old string object is discarded and the variable now points to a completely different one.
 
 ### 5.6 Common String Methods
 
@@ -867,7 +867,7 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened = [num for row in matrix for num in row]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-> **Example/Explanation by Claude:** Reading a nested comprehension left to right mirrors writing nested `for` loops: `for row in matrix` is the outer loop, `for num in row` is the inner loop, and `num` (at the very front) is what gets collected. It's the same logic as:
+> **AI Example/Explanation:** Reading a nested comprehension left to right mirrors writing nested `for` loops: `for row in matrix` is the outer loop, `for num in row` is the inner loop, and `num` (at the very front) is what gets collected. It's the same logic as:
 > ```python
 > flattened = []
 > for row in matrix:
@@ -1014,7 +1014,7 @@ copy_dict = original     # NOT a real copy!
 ```
 - Simply assigning `copy_dict = original` does **not** create a new dictionary — both names point to the **same object in memory** (confirmed via `id(copy_dict) == id(original)`). Modifying one modifies the other.
 
-> **Example/Explanation by Claude:** This is one of the most common beginner traps in Python. `copy_dict = original` doesn't duplicate the dictionary — it's like giving a second nickname to the *same* person. Any change made through either name affects the same underlying dictionary. To make an actual independent copy, use `original.copy()` or `dict(original)` instead.
+> **AI Example/Explanation:** This is one of the most common beginner traps in Python. `copy_dict = original` doesn't duplicate the dictionary — it's like giving a second nickname to the *same* person. Any change made through either name affects the same underlying dictionary. To make an actual independent copy, use `original.copy()` or `dict(original)` instead.
 
 ### 6.13 Dictionary Comprehensions
 ```python
@@ -1175,7 +1175,7 @@ def tower_of_hanoi(n, source, auxiliary, target):
 
 tower_of_hanoi(3, 'A', 'B', 'C')
 ```
-> **Example/Explanation by Claude:** Tower of Hanoi is the "hardest" recursion example here, so let's slow down. The goal: move `n` disks from rod A to rod C, using rod B as a helper, moving only one disk at a time and never placing a bigger disk on a smaller one. The recursive insight is: to move `n` disks from A to C, (1) first move the top `n-1` disks from A to B (using C as helper), (2) move the single largest remaining disk from A to C, (3) then move those `n-1` disks from B to C (using A as helper). Each of steps (1) and (3) is the *same kind of problem*, just smaller — that's why it's naturally recursive.
+> **AI Example/Explanation:** Tower of Hanoi is the "hardest" recursion example here, so let's slow down. The goal: move `n` disks from rod A to rod C, using rod B as a helper, moving only one disk at a time and never placing a bigger disk on a smaller one. The recursive insight is: to move `n` disks from A to C, (1) first move the top `n-1` disks from A to B (using C as helper), (2) move the single largest remaining disk from A to C, (3) then move those `n-1` disks from B to C (using A as helper). Each of steps (1) and (3) is the *same kind of problem*, just smaller — that's why it's naturally recursive.
 
 ### 7.4 Recursion vs Iteration (Loops)
 - Both can solve repetitive problems, but:
@@ -1249,7 +1249,7 @@ with open('example.txt', 'r') as file:
         print(line, end=" ")
 ```
 
-> **Example/Explanation by Claude:** Manually calling `file.close()` is risky — if an error happens between `open()` and `close()`, the file might be left open, wasting system resources or even corrupting data. The `with` statement guarantees the file gets closed automatically the moment the block finishes, whether it finished normally or because of an error. It's the Python-recommended way to work with files for exactly this reason.
+> **AI Example/Explanation:** Manually calling `file.close()` is risky — if an error happens between `open()` and `close()`, the file might be left open, wasting system resources or even corrupting data. The `with` statement guarantees the file gets closed automatically the moment the block finishes, whether it finished normally or because of an error. It's the Python-recommended way to work with files for exactly this reason.
 
 ### 8.5 Exception Handling
 
@@ -1327,7 +1327,7 @@ except ValueError:
     print("Error: Please enter a valid integer.")
 ```
 
-> **Example/Explanation by Claude:** Think of `try/except` like a safety net for a specific kind of accident. A `try` block says "attempt this risky operation." Each `except` clause is a specific plan for a specific kind of failure — a `FileNotFoundError` net catches missing files, a `ZeroDivisionError` net catches math errors, and so on. `finally` is the part that runs *no matter what* — whether the attempt succeeded or failed — much like always turning off the stove after cooking, whether the dish came out right or burnt.
+> **AI Example/Explanation:** Think of `try/except` like a safety net for a specific kind of accident. A `try` block says "attempt this risky operation." Each `except` clause is a specific plan for a specific kind of failure — a `FileNotFoundError` net catches missing files, a `ZeroDivisionError` net catches math errors, and so on. `finally` is the part that runs *no matter what* — whether the attempt succeeded or failed — much like always turning off the stove after cooking, whether the dish came out right or burnt.
 
 ---
 
@@ -1338,7 +1338,7 @@ except ValueError:
 - **Class:** A blueprint/template that defines the structure (attributes) and behavior (methods) of a type of object.
 - **Object:** A specific instance created from a class, with actual data.
 
-> **Example/Explanation by Claude:** A class is like an architectural blueprint for a house — it defines what rooms exist and how big they are, but it isn't a house you can live in. An object is an actual house built from that blueprint — you can have many houses (objects) built from the same blueprint (class), each with different paint colors or furniture (different attribute values).
+> **AI Example/Explanation:** A class is like an architectural blueprint for a house — it defines what rooms exist and how big they are, but it isn't a house you can live in. An object is an actual house built from that blueprint — you can have many houses (objects) built from the same blueprint (class), each with different paint colors or furniture (different attribute values).
 
 ### 9.2 The Constructor (`__init__`)
 - The `__init__` method is a special method automatically called when a new object is created from a class. It's used to initialize the object's attributes.
@@ -1427,7 +1427,7 @@ class Person:
         self.__name = value
 ```
 
-> **Example/Explanation by Claude:** Encapsulation is like a bank vault: you (external code) can't just reach in and grab the cash (`__balance`) directly — you have to go through the teller window (`deposit()`, `get_balance()`), which enforces rules (like "only positive deposits allowed"). The `@property` decorator is a clean way to let outside code *look* like it's directly accessing an attribute (`person.name`) while secretly routing through controlled getter/setter methods.
+> **AI Example/Explanation:** Encapsulation is like a bank vault: you (external code) can't just reach in and grab the cash (`__balance`) directly — you have to go through the teller window (`deposit()`, `get_balance()`), which enforces rules (like "only positive deposits allowed"). The `@property` decorator is a clean way to let outside code *look* like it's directly accessing an attribute (`person.name`) while secretly routing through controlled getter/setter methods.
 
 ### 9.5 Data Abstraction
 - **Abstraction** means exposing only the *essential* features of an object while hiding the internal implementation complexity from the user.
@@ -1474,7 +1474,7 @@ class HardDrive(StorageDevice):
         return "Data stored in Hard Drive"
 ```
 
-> **Example/Explanation by Claude:** Abstraction is like using a smartphone — you tap "call," and the phone connects you. You don't need to know (or care) about the cellular signal processing happening underneath. `SmartPhone.make_call()` is the exposed simple interface; `__complex_internal_logic()` is the hidden machinery the user never has to think about.
+> **AI Example/Explanation:** Abstraction is like using a smartphone — you tap "call," and the phone connects you. You don't need to know (or care) about the cellular signal processing happening underneath. `SmartPhone.make_call()` is the exposed simple interface; `__complex_internal_logic()` is the hidden machinery the user never has to think about.
 
 **Encapsulation vs Abstraction — Key Distinction:**
 - **Encapsulation** is about *restricting access* to data (using private variables, getters/setters).
@@ -1605,7 +1605,7 @@ class Grandchild(Child, OtherParent):    # multilevel + multiple combined
     def method_GC(self): return "Method from Grandchild"
 ```
 
-> **Example/Explanation by Claude:** Think of these five types visually: **Single** is a straight line (one parent, one child). **Multilevel** is a longer straight line (grandparent → parent → child — an unbroken chain). **Hierarchical** is a tree branching out from one root (one parent, many children). **Multiple** is two lines merging into one point (one child, two parents). **Hybrid** is any combination of the above patterns in a single, more complex family tree.
+> **AI Example/Explanation:** Think of these five types visually: **Single** is a straight line (one parent, one child). **Multilevel** is a longer straight line (grandparent → parent → child — an unbroken chain). **Hierarchical** is a tree branching out from one root (one parent, many children). **Multiple** is two lines merging into one point (one child, two parents). **Hybrid** is any combination of the above patterns in a single, more complex family tree.
 
 ### 10.3 Method Resolution Order (MRO) with Multiple Inheritance
 - When multiple parent classes define the *same* method name, Python resolves which one to use based on the **order the parent classes are listed** in the class definition.
@@ -1699,7 +1699,7 @@ def make_it_quack(ducklike):
 make_it_quack(Duck())     # Quack!
 make_it_quack(Person())   # I'm pretending to be a duck!
 ```
-> **Example/Explanation by Claude:** Duck typing means Python cares about *what an object can do*, not *what class it belongs to*. `make_it_quack()` doesn't check whether its argument is a `Duck` — it just calls `.quack()` on whatever it's given. As long as the object has a `quack()` method, it works, even if the classes are completely unrelated.
+> **AI Example/Explanation:** Duck typing means Python cares about *what an object can do*, not *what class it belongs to*. `make_it_quack()` doesn't check whether its argument is a `Duck` — it just calls `.quack()` on whatever it's given. As long as the object has a `quack()` method, it works, even if the classes are completely unrelated.
 
 **3. Operator Overloading** — redefining how built-in operators (like `+`) behave for custom classes, using special "dunder" (double-underscore) methods.
 ```python
@@ -1719,7 +1719,7 @@ point2 = Point(3, 4)
 result = point1 + point2    # calls __add__ automatically
 print(result)                # Point(4, 6)
 ```
-> **Example/Explanation by Claude:** Normally `+` only works on numbers or strings, but `__add__` lets you teach Python what `+` should mean for your *own* custom object. Here, "adding" two `Point` objects means adding their `x` and `y` coordinates separately — Python calls `__add__` behind the scenes whenever you write `point1 + point2`.
+> **AI Example/Explanation:** Normally `+` only works on numbers or strings, but `__add__` lets you teach Python what `+` should mean for your *own* custom object. Here, "adding" two `Point` objects means adding their `x` and `y` coordinates separately — Python calls `__add__` behind the scenes whenever you write `point1 + point2`.
 
 ---
 
